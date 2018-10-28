@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function getQueryStringValue (key) {  
+    return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
+}
+
+</script>
+<div>data : <span id="data"></span></div>
+
+<script>
+document.getElementById("data").innerHTML = getQueryStringValue("data");
+</script>
+</body>
+</html>

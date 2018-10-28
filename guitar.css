@@ -1,0 +1,289 @@
+body
+{
+    display: block;
+    margin: 10px;
+    border-image: none ;
+}
+#main-page
+{
+    display: block;
+    flex-flow: row wrap;
+    padding: 10px 10px;
+    color: white;
+    font-size: 20px;
+}
+#menu-bar
+{
+    display: block;
+    margin: 0px 5px 5px 0px;
+    color: #ffffff;
+    background-color: grey;
+    justify-content: center;
+    padding: 0px 170px 0px 20px;
+}
+.menubar
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.submenu
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-right: 40px;
+    background-color: grey;
+    visibility: hidden;
+
+}
+.dropbtn {
+    background-color: grey;
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+    width: auto;
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+    justify-content: space-between;
+
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px grey;
+    z-index: 1;
+    justify-content: space-between;
+}
+.dropdown-content a
+{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    width: 210px;
+}
+
+.dropdown-content a:hover
+    {
+        background-color: lightgray;
+    }
+
+.dropdown:hover .dropdown-content
+    {
+        display: block;
+    }
+
+.dropdown:hover .dropbtn
+    {
+        background-color: lightgray;
+    }
+#image_path
+{
+
+    position:relative;
+    margin-top: 50px;
+    margin-right: auto;
+    max-height: 400px;
+   
+}
+#image-nav img
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px 10px #888888;
+}
+#reviewimag 
+{
+    display: block;
+    float: left;
+    max-height: 400px;
+    width: auto;
+}
+#columnflex
+{
+    display: block;
+    flex-flow: column wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+#btn-nav
+{
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: content-box;
+    width: 20cm;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    position:relative ;
+    margin-top: 30px;
+    
+}
+#btn-nav button
+{
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #555;
+    color: white;
+    box-shadow: 5px 5px #888888;
+}
+.collapsible 
+{
+    background-color: #555;
+    display: block;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 18px;
+    width: 25%;
+    border: none;
+    outline: none;
+    top: 0px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+}
+.sbtbutton
+{
+    min-width:10%;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+}
+
+.active, .collapsible:hover 
+{
+    background-color:#777(161, 154, 154);
+    
+}
+
+.content 
+{
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px;
+    margin:10px 10px 10px 10px;
+    text-align: center;
+    color: black;
+    
+}
+.review-content
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#description
+{
+    position: relative;
+    border: 3px solid black;
+    color: black;
+    max-height: 400px;
+    width: 55%;
+    margin: 50px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 20px;
+    box-shadow: 5px 5px #888888;
+
+}
+.desc1{
+    position: relative;
+    border: 3px solid black;
+    color: black;
+    max-height: 400px;
+    width: 55%;
+    margin: 50px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 20px;
+    box-shadow: 5px 5px #888888;
+
+}
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+label
+{
+    color: navy;
+}
+#details
+{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: left;
+    padding: 50px;
+    border: 2px solid gray;
+    min-height: 200px;
+    max-width: auto;  
+    color: darkblue; 
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+}
+#shippingAddressFields
+{
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+}
+#formdisplay
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: left;
+    padding: 50px;
+    border: 2px solid gray;
+    min-height: 200px;
+    max-width: 55%;  
+    color: darkslategray; 
+    text-shadow: 2px 2px 5px lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888; 
+}
+.buybtn
+{
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 5px 5px #888888;
+    min-width: 20%;
+    margin: 2% 40%;
+}

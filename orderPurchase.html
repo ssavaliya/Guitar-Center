@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Purchase</title>
+    <link rel="stylesheet" type="text/css" href="guitar.css">
+</head>
+<body>
+    <div id="main-page">
+    <div id="main header">
+        <div id="menu-bar">
+            <div class="dropdown">
+                <button class="dropbtn">Guitar</button>
+                <div class="dropdown-content">
+                    <a href="#">Electric Guitar</a>
+                    <a href="#">Acqustic Guitar</a>
+                    <a href="#">Acqustic-Electric Guitar</a>
+                    <a href="#">Classical Guitar</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Bass</button>
+                <div class="dropdown-content">
+                    <a href="#">Electric Guitar</a>
+                    <a href="#">Acqustic Guitar</a>
+                    <a href="#">Acqustic-Electric Guitar</a>
+                    <a href="#">Classical Guitar</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Drums</button>
+                <div class="dropdown-content">
+                    <a href="#">Electric Guitar</a>
+                    <a href="#">Acqustic Guitar</a>
+                    <a href="#">Acqustic-Electric Guitar</a>
+                    <a href="#">Classical Guitar</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Keybords</button>
+                <div class="dropdown-content">
+                    <a href="#">Electric Guitar</a>
+                    <a href="#">Acqustic Guitar</a>
+                    <a href="#">Acqustic-Electric Guitar</a>
+                    <a href="#">Classical Guitar</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Dj & Lighting</button>
+                <div class="dropdown-content">
+                    <a href="#">Electric Guitar</a>
+                    <a href="#">Acqustic Guitar</a>
+                    <a href="#">Acqustic-Electric Guitar</a>
+                    <a href="#">Classical Guitar</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Used Gear</button>
+                <div class="dropdown-content">
+                    <a href="#">Electric Guitar</a>
+                    <a href="#">Acqustic Guitar</a>
+                    <a href="#">Acqustic-Electric Guitar</a>
+                    <a href="#">Classical Guitar</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Clearance</button>
+                <div class="dropdown-content">
+                    <a href="#">Electric Guitar</a>
+                    <a href="#">Acqustic Guitar</a>
+                    <a href="#">Acqustic-Electric Guitar</a>
+                    <a href="#">Classical Guitar</a>
+                </div>
+            </div>
+        </div>
+        <div class="review-content">
+            <div id="image-nav">
+                <img id="image_path" src="product1.jpg" height="">
+            </div>     
+            <div class="desc1"></div>
+        </div>
+            <div id="formdisplay">
+                <form name="form1" onload="return displyaDetails();" method="POST">
+                    <fieldset id="shippingAddressFields" class="addressForm">
+                        <p>
+                            <label s><span class="required">*</span>First Name:</label>
+                            <input id="firstName" title="Enter First Name" maxlength="22" name="FirstName" value="" pattern="^(?=.*[a-z])(?=.*[A-Z]).*$" class="text required" type="text"><span class="validation_error">&nbsp;&nbsp;&nbsp;&nbsp;Please enter a first name.</span>
+                        </p>
+                        <p>
+                            <label for="lastName"><span class="required">*</span>Last Name:</label>
+                            <input id="lastName" title="Enter Last Name" maxlength="40" name="lastName" value="" pattern="^(?=.*[a-z])(?=.*[A-Z]).*$" class="text required" type="text"><span class="validation_error">&nbsp;&nbsp;&nbsp;&nbsp;Please enter a last name.</span>
+                        </p>
+                        <p>
+                            <label for="address1"><span class="required">*</span>Address 1:</label>
+                            <input id="address1" maxlength="35" name="address1" value="" class="text required" pattern="^(?=.*[a-z])(?=.*[A-Z]).*$" type="text"><span class="validation_error">&nbsp;&nbsp;&nbsp;&nbsp;Please enter your address.</span>
+                        </p>
+                        <p>
+                            <label class="notRequired" for="address2">Address 2:</label>
+                            <input id="address2" title="Enter Address Line Two" maxlength="35" name="address2" pattern="^(?=.*[a-z])(?=.*[A-Z]).*$" value="" class="notRequired text" type="text">
+                        </p>
+                        <p>
+                            <label for="country">Country:</label>
+                            <input id="country" title="country" pattern="^(?=.*[a-z])(?=.*[A-Z]).*$" class="required" type="text">
+                        </p>
+                        <p>
+                            <label for="city"><span class="required">*</span>City:</label>
+                            <input id="city" title="Enter City" maxlength="30" name="city" value="" pattern="^(?=.*[a-z])(?=.*[A-Z]).*$" class="text required" type="text"><span class="validation_error">&nbsp;&nbsp;&nbsp;&nbsp;Please enter your city.</span>
+                        </p>
+                        <p>
+                            <label for="state"><span class="required">*</span>State:</label>
+                            <select id="state" title="Select State" name="state"><option value="">State</option><option value="AL">AL - Alabama</option><option value="AK">AK - Alaska</option><option value="AS">American Samoa</option><option value="AZ">AZ - Arizona</option><option value="AR">AR - Arkansas</option><option value="AA">Armed Forces Americas</option><option value="AE">Armed Forces Europe</option><option value="AP">Armed Forces Pacific</option><option value="CA">CA - California</option><option value="CO">CO - Colorado</option><option value="CT">CT - Connecticut</option><option value="DE">DE - Delaware</option><option value="DC">DC - District of Columbia</option><option value="FM">Federated States of Micronesia</option><option value="FL">FL - Florida</option><option value="GA">GA - Georgia</option><option value="GU">Guam</option><option value="HI">HI - Hawaii</option><option value="ID">ID - Idaho</option><option value="IL">IL - Illinois</option><option value="IN">IN - Indiana</option><option value="IA">IA - Iowa</option><option value="KS">KS - Kansas</option><option value="KY">KY - Kentucky</option><option value="LA">LA - Louisiana</option><option value="ME">ME - Maine</option><option value="MH">Marshall Islands</option><option value="MD">MD - Maryland</option><option value="MA">MA - Massachusetts</option><option value="MI">MI - Michigan</option><option value="MN">MN - Minnesota</option><option value="MS">MS - Mississippi</option><option value="MO">MO - Missouri</option><option value="MT">MT - Montana</option><option value="NE">NE - Nebraska</option><option value="NV">NV - Nevada</option><option value="NH">NH - New Hampshire</option><option value="NJ">NJ - New Jersey</option><option value="NM">NM - New Mexico</option><option value="NY">NY - New York</option><option value="NC">NC - North Carolina</option><option value="ND">ND - North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">OH - Ohio</option><option value="OK">OK - Oklahoma</option><option value="OR">OR - Oregon</option><option value="PW">Palau</option><option value="PA">PA - Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">RI - Rhode Island</option><option value="SC">SC - South Carolina</option><option value="SD">SD - South Dakota</option><option value="TN">TN - Tennessee</option><option value="TX">TX - Texas</option><option value="UT">UT - Utah</option><option value="VT">VT - Vermont</option><option value="VI">Virgin Islands</option><option value="VA">VA - Virginia</option><option value="WA">WA - Washington</option><option value="WV">WV - West Virginia</option><option value="WI">WI - Wisconsin</option><option value="WY">WY - Wyoming</option></select>
+                        </p>
+                        <p>
+                            <label for="postalCode"><span class="required">*</span>ZIP Code:</label>
+                            <input id="postalCode" title="Enter Postal Code" maxlength="10" name="postalCode" pattern="^(?=.*[0-9]).*$" value="" class="text small required" type="text"><span class="validation_error">&nbsp;&nbsp;&nbsp;&nbsp;Please enter your ZIP code.</span>
+                        </p>
+                        <p>
+                            <label for="phoneNumber"><span class="required">*</span>Phone:</label>
+                            <input id="phoneNumber" title="Enter Phone Number" maxlength="16" name="phoneNumber" pattern="^(?=.*[0-9]).*$" value="" class="text required" type="text"><span class="format-example">(XXX) XXX-XXXX</span><span class="validation_error">&nbsp;&nbsp;&nbsp;&nbsp;Please enter your phone number.</span>
+                        </p>
+                        <button type="button" class="sbtbutton" onclick="displyaDetails();">Review</button>
+                    </fieldset> 
+                </form>
+                <div><p id="details"></p>
+                    <form action="ConfirmOrder.html">
+                            <button class="buybtn">BUY</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+</div>
+    <script type="text/javascript" src="guitar.js"></script>
+</body>
+</html>
